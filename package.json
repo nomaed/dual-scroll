@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "systemjs": "^0.19.38",
+    "tslint": "git+https://github.com/palantir/tslint.git",
     "typescript": "^1.8.10"
   },
   "scripts": {
