@@ -17,5 +17,5 @@ trim_trailing_whitespace = false
 [Makefile]
 indent_style = tab
 
-[tslint.json]
+[{tslint,tsconfig,jsconfig,package}.json]
 indent_size = 4

@@ -7,26 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="css/dual-scroll.css" rel="stylesheet">
-
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="node_modules/typescript/lib/typescript.js"></script>
-
+    <script src="./node_modules/systemjs/dist/system.src.js"></script>
     <script>
-    // set our baseURL reference path
-    SystemJS.config({
-    //   baseURL: '/3denj',
-      transpiler: 'typescript',
-      packages: {
-        src: {
-          defaultExtension: 'ts'
-        }
-      }
-    });
+        SystemJS.config({
+            baseURL: '/~nomaed/dual-scroll',
+            defaultJSExtensions: true
+        });
 
-    SystemJS
-      .import('src/main')
-      .then(null, console.error.bind(console));
-  </script>
+        SystemJS
+            .import('js/main')
+            .then(module => module.main())
+            .catch(err => console.error(err));
+
+    </script>
 </head>
 
 <body>
@@ -128,44 +121,6 @@
                     massa. At integer suspendisse. Purus sit mi. Et tortor voluptas convallis sapien vel. Ut consectetuer
                     velit. Sed commodo velit.
                 </p>
-                <h2>Gravida augue mollis</h2>
-                <p>Erat turpis lacus. Gravida nec hendrerit. Aliquam pede a proin vestibulum curabitur vivamus massa morbi.
-                    Nulla mauris in. Dui in ac. Nibh rutrum et scelerisque mauris sodales risus rutrum id eleifend massa
-                    orci architecto est mus. Ac consequatur massa enim amet netus. Vitae euismod magna sociosqu donec orci
-                    nec fermentum laoreet sed mauris sagittis nam con mauris. Enim lobortis aliquam. Non ultrices tincidunt
-                    lorem faucibus nec. Sollicitudin in tellus. Et qui urna suspendisse semper montes semper justo sit facilisis
-                    eu lorem sed morbi porta. Orci mi cursus penatibus maecenas tempor. Wisi volutpat urna. Id ac nam nibh
-                    erat odio vitae vel nec. Ut vulputate a. Tristique rutrum etiam consequat quo taciti. Mauris integer
-                    libero. Nonummy nascetur in.</p>
-                <h2>Sodales nec quis aliquam vitae ligula</h2>
-                <p>Nisl elit tincidunt sed eget consequat integer sed tristique. Imperdiet enim sodales. Id pellentesque cumque
-                    dolor pellentesque lorem. Penatibus elit a lorem mauris quisque tincidunt et tincidunt. Elit donec dolor
-                    wisi a tortor. Sit vel interdum. Risus deserunt class tellus est odio. Morbi ut aliquam erat wisi augue
-                    duis fusce amet. Ultrices velit adipiscing.</p>
-                <h2>Laoreet dui fringilla</h2>
-                <p>Tortor odio proin posuere cras morbi. Natoque pellentesque arcu leo egestas luctus. Convallis est sodales.
-                    Urna nostrud eu. Tortor lectus pretium orci nunc venenatis vel lacus aenean. In praesent felis. Morbi
-                    nam placerat aliquam amet rhoncus facilisi hac odio aliquet posuere vestibulum. Magna amet elementum
-                    ac enim et. Convallis tristique et neque orci et nibh metus amet arcu sagittis justo sed lectus donec.
-                    Et libero faucibus condimentum lacus nullam nam vestibulum vulputate. Id dolor ultrices. Ac volutpat
-                    felis pede lectus amet itaque neque egestas elit leo enim. Eget quis id. Pellentesque ornare sem. Penatibus
-                    pharetra nulla. Elit feugiat eu eleifend interdum accusantium. Erat conubia volutpat laoreet phasellus
-                    blandit. Vitae sagittis feugiat dolor maecenas cursus. Leo lorem praesent.</p>
-                <h2>Purus commodo mi</h2>
-                <p>Dignissim dapibus excepturi. Mus eget velit semper felis erat non id sem egestas eu nec. Sapien mauris libero.
-                    Lorem diam eros massa a nibh. Ullamcorper in tellus. Arcu suspendisse amet nonummy quam elit erat pellentesque
-                    diam lacus nulla scelerisque duis blandit est nulla nisl donec. Amet morbi eget vestibulum ac mauris.
-                    Nec nulla ut. Vitae faucibus dolor.</p>
-                <h2>Eros augue at</h2>
-                <p>Sed porta nisl faucibus laoreet velit. In sit nisl dictum praesent sed. Massa sed eget quam turpis wisi.
-                    Curabitur odio est maecenas nec enim curabitur iaculis et massa at ut. Justo sed quis. Pulvinar ut venenatis
-                    sem nunc ac nec curabitur auctor id turpis ullamcorper. Elementum fringilla elementum mi non sed. Vestibulum
-                    sed feugiat. In justo orci.</p>
-                <h2>Adipiscing elit magna velit pellentesque bibendum enim vitae sed</h2>
-                <p>Placerat cras id. Sit wisi aut orci ligula posuere velit magna nibh. Vulputate est in. Risus justo semper.
-                    Nibh sollicitudin cupidatat. Adipiscing arcu massa sit aptent in. Tempor mus at. Dapibus nam quam id
-                    at nullam libero iste scelerisque quis sodales massa pellentesque sed urna. Neque senectus libero vel
-                    est purus.</p>
             </div>
         </div>
     </div>

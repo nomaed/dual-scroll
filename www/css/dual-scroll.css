@@ -1,18 +1,22 @@
-body {
+html, body {
   margin: 0;
-  padding: 100px 0 0 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 0;
 }
 
-body>header {
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 100px;
+}
+
+body > header {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 96px;
+  height: 100px;
   margin: 0;
   padding: 0;
   background-color: rgba(102, 102, 255, .85);
+  z-index: 10;
 }
 
 header .header-content {
@@ -22,20 +26,29 @@ header .header-content {
   text-shadow: 1px 1px 0 #444
 }
 
-#container {}
+#container {
+  position: relative;
+  margin: 4px;
+}
 
 #left-div {
-  background: linear-gradient(palevioletred, goldenrod);
   float: left;
   width: calc(50% - 2px);
-  overflow: hidden;
+  overflow: visible;
+}
+
+#left-div > div.content {
+  background: linear-gradient(palevioletred, goldenrod);
 }
 
 #right-div {
-  background: linear-gradient(mediumseagreen, dodgerblue);
   float: right;
   width: calc(50% - 2px);
-  overflow: hidden;
+  overflow: visible;
+}
+
+#right-div > div.content {
+  background: linear-gradient(mediumseagreen, dodgerblue);
 }
 
 div.content {
@@ -48,4 +61,8 @@ div.content h1 {
 
 div.content h2 {
   text-shadow: 0 0 2px greenyellow;
+}
+
+.sticky-stick {
+  position: relative;
 }

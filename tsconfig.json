@@ -1,15 +1,17 @@
 {
-  "compilerOptions": {
-    "module": "system",
-    "target": "es6",
-    "noImplicitAny": true,
-    "sourceMap": true,
-    "outDir": "built"
-  },
-  "files": [
-      "src/main"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "compilerOptions": {
+        "strictNullChecks": true,
+        "module": "system",
+        "target": "es6",
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "outDir": "built",
+        "pretty": true
+    },
+    "files": [
+        "src/main"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
 }
